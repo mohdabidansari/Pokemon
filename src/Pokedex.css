@@ -1,5 +1,37 @@
+.Pokedex {
+   text-align: center;
+}
+
 .Pokedex-cards {
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
 }
+
+.Pokedex-result{
+   position: absolute;
+   left: 47%;
+   text-align: center;
+   padding-top: 50px;
+   writing-mode: vertical-lr;
+   text-orientation: upright;
+   animation: fading 5s backwards 1s;
+}
+
+.Pokedex-winner {
+   color: #1e8f22;
+}
+
+.Pokedex-loser {
+   color: #e91818;
+}
+
+@keyframes fading {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+} 
