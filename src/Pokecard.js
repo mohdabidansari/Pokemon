@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Pokecard.css";
 
+let padToThree = (num) => (num<=999) ? `00${num}`.slice(-3) : num;
+
 class Pokecard extends Component {
 
    // static defaultProps = {
@@ -11,7 +13,8 @@ class Pokecard extends Component {
    // }
    
   render() { 
-   let imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.id}.png`;    
+   //let id = 
+   let imgSrc = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${padToThree(this.props.id)}.png`;    
     return (
       <div className="Pokecard">
         <h1 className="Pokecard-title">{this.props.name}</h1>
