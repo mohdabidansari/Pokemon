@@ -2,8 +2,10 @@
    margin: auto;
    background-color: lightgray;
    border-radius: 5px;
-   width: 200px;
-   height: 250px;
+   width: 30%;
+   height: 35%;
+   float: left;
+   margin: 1.5%;
 }
 
 .Pokecard-h3 {
